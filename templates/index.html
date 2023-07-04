@@ -1,0 +1,10 @@
+{{template "header.html" .}}
+
+<h2>This is the main content of the index page</h2>
+
+<button class="btn btn-primary" hx-get="/api/about" hx-trigger="click" hx-target="#parent-div" hx-swap="outerHTML">
+    Click Me!
+</button>
+<div id="parent-div"></div>
+
+{{template "footer.html" .}}
